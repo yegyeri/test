@@ -1,0 +1,164 @@
+.tournament {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    gap: 21px;
+    overflow: hidden;
+    @media (max-width: 375px){
+        margin-top: 82px;
+        gap: 5px;
+    }
+}
+.tour__header {
+    width: 95%;
+    height: 20%;
+    margin-left: 77px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    @media (max-width: 375px){
+        margin-left: 0px;
+    }
+}
+.user_tour {
+    @media (max-width: 375px){
+        width: 100%;
+        margin-left: 10px;
+        margin-bottom: 12px;
+    }
+}
+.slider__btns{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-left: 411px;
+    margin-bottom: 5px;
+    @media (max-width: 375px){
+        position: absolute;
+        content: '';
+        top: 4150px;
+        right: 90px;
+        height: 50px;
+        width: 200px;
+    }
+    
+}
+.numbers {
+    font-family: var(--golos);
+    display: flex;
+}
+.chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 35px;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color_one);
+    border-radius: 50%;
+    line-height: 24px;
+}
+.chevron:hover{
+    background-color: var(--yellow);
+    color: white;
+    transition: .5s ease;
+}
+.person__slider {
+    height: 500px;
+    width: 84%;
+    @media (max-width: 375px){
+        width: 100%;
+    }
+}
+.slider {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 95px;
+    position: relative;
+    left: 0;
+    transition: all ease 3s;
+    @media (max-width: 375px){
+        width: 90%;
+        margin-left: 30px;
+    }
+}
+.person__card{
+    width: 394px;
+    height: 462px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 28px;
+}
+.person__card img {
+    @media (max-width: 375px){
+        width: 244px;
+        height: 244px;
+    }
+}
+.person__name{
+    height: 7px;
+    font-family: var(--golos);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color_one);
+    @media (max-width: 375px){
+        font-size: 24px;
+        line-height: 29px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.rank {
+    height: 16px;
+    font-family: var(--golos);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--grey);
+    @media (max-width: 375px){
+        font-size: 20px;
+        line-height: 24px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.person__card a{
+    display: grid;
+    place-items: center;
+    font-family: var(--golos);
+    width: 113px;
+    height: 35px;
+    text-decoration: none;
+    border-radius: 60px;
+    background-color: var(--invisible);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+.person__card a:hover{
+    background-color: var(--blue);
+    color: aliceblue;
+    transition: .5s ease;
+}
+@media (max-width: 375px){
+    .person__card {
+        width: 90%;
+        gap: 30px;
+        justify-content: center;
+    }
+}
